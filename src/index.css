@@ -1,0 +1,21 @@
+.login-form {
+  max-width: 500px;
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+.signup-form {
+  max-width: 500px;
+}
+.nav-bar {
+  max-width: 420px;
+}
+.sign-in {
+  display: "flex";
+  align-content: "center";
+  align-items: "center";
+  flex-direction: "column";
+}
