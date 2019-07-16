@@ -83,12 +83,13 @@ class Register extends React.Component {
     );
 
     return (
-      <div>
-        <h1 style={{ textAlign: "center", width: "35%" }}>Sign up</h1>
+      <div style={style.divStyle}>
+        <h1 style={style.titleStyle}>Sign up</h1>
         <Form
           {...formItemLayout}
           onSubmit={this.handleSubmit}
           className="signup-form"
+          style={style.formStyle}
         >
           <Form.Item label="E-mail">
             {getFieldDecorator("email", {
@@ -187,3 +188,22 @@ class Register extends React.Component {
 
 const RegistrationForm = Form.create({ name: "register" })(Register);
 export default RegistrationForm;
+
+const style = {
+  titleStyle: {
+    display: "flex",
+    marginLeft: "190px",
+    marginTop: "50px"
+  },
+  divStyle: {
+    marginLeft: "450px",
+    width: "50%",
+    height: "10%"
+  },
+
+  formStyle: {
+    textAlign: "center",
+    width: "65%",
+    marginTop: "75px"
+  }
+};
